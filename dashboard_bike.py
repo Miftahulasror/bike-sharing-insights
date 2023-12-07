@@ -28,8 +28,6 @@ def create_sum_total_count_df(df):
 
 day_df = pd.read_csv('day_bike.csv')
 
-day_df.info()
-
 day_df.sort_values(by='datetime', inplace=True)
 day_df.reset_index(inplace=True)
 day_df['datetime'] = pd.to_datetime(day_df['datetime'])
